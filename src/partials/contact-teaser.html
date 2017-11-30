@@ -11,9 +11,9 @@
     <div class="contact-teaser__links">
         <ul>
             {{#each global.contact.links}}
-                <li class="contact-teaser__link {{#if class}}contact-teaser__link--{{class}}{{/if}}">
-                    <a href="{{url}}" class="button">
-                        {{title}}
+                <li class="contact-teaser__link contact-teaser__link--{{class}}">
+                    <a href="{{url}}" class="button" title="{{title}}" alt="{{title}}">
+                        {{sprite class}}
                     </a>
                 </li>
             {{/each}}

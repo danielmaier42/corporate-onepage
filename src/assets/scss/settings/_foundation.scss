@@ -65,7 +65,7 @@
 //// 1. Global
 //// ---------
 //
-//$global-font-size: 100%;
+$global-font-size: 150%;
 //$global-width: rem-calc(1200);
 //$global-lineheight: 1.5;
 //$foundation-palette: (
@@ -199,7 +199,7 @@ $header-font-family: $dm-font-headline, $body-font-family;
 //// 5. Typography Helpers
 //// ---------------------
 //
-//$lead-font-size: $global-font-size * 1.25;
+$lead-font-size: $global-font-size;
 //$lead-lineheight: 1.6;
 //$subheader-lineheight: 1.4;
 //$subheader-color: $dark-gray;
