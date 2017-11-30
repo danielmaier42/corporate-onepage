@@ -1,27 +1,3 @@
-nav:
-  -
-    title: Link Normal
-    link: link-1
-  -
-    title: Link Dropdown
-    link: link-2
-    dropdown:
-      -
-        title: Dropdown Link
-        link: dropdown-link
-        sub:
-          -
-            title: Sub
-            link: sub
-
-  -
-      title: Noch mehr links
-      link: link-3
-      dropdown:
-        -
-          title: ASDF
-          link: dropdown-link
-          sub:
-            -
-              title: Sub
-              link: Sub Sub
+contact:
+  email: dm@maierdaniel.de
+  name: Daniel Maier
