@@ -29,7 +29,7 @@ $contact-teaser-email-color: #F43638 !default;
   }
 
   &__function {
-    margin-bottom: $contact-teaser-gutter;
+    margin-bottom: $contact-teaser-gutter * 2;
 
     .lead {
       margin: 0;
