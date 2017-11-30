@@ -54,6 +54,10 @@ $contact-teaser-email-color: #F43638 !default;
     margin-bottom: $contact-teaser-gutter;
     color: white;
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     a {
       margin: 0;
       border-radius: 50%;
