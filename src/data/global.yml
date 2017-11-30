@@ -18,3 +18,22 @@ contact:
       title: XING
       url: https://www.xing.com/profile/Daniel_Maier89
       class: xing
+
+skills:
+  - title: PHP
+  - title: MySQL
+
+  - title: Coding-Standards
+
+  - title: TYPO3
+  - title: NEOS
+  - title: Magento 1/2
+  - title: Laravel
+
+  - title: Linux
+  - title: AmazonAWS
+  - title: Docker
+  - title: IT-Security
+
+  - title: JIRA
+  - title: Confluence

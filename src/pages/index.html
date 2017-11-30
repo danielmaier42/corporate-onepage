@@ -23,6 +23,16 @@
             <a href="mailto:{{global.contact.email}}">{{global.contact.email}}</a>.
             Ich werde mich schnellstmöglich mit Ihnen in Verbindung setzen um alle weiteren Details persönlich zu
             besprechen.</p>
+
+        <div class="skills">
+            <ul>
+                {{#each global.skills}}
+                    <li>
+                        <span class="primary label">{{title}}</span>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
     </div>
 </section>
 
