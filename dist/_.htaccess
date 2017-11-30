@@ -1,0 +1,6 @@
+RewriteEngine on
+Rewritecond %{HTTP_HOST} !^www\.maierdaniel\.de
+RewriteRule ^(.*)$ https://www.maierdaniel.de/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
