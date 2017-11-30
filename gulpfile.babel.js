@@ -244,15 +244,14 @@ function server(done) {
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
-	gulp.watch(PATHS.assets, copy);
-	gulp.watch(PATHS.src.src + '/pages/**/*.html', pages);
-	gulp.watch(PATHS.src.src + '/{layouts,partials}/**/*.html', resetPages, pages);
-	gulp.watch(PATHS.src.src + '/data/**/*.{js,json,yml}', resetPages, pages);
-	gulp.watch(PATHS.src.src + '/helpers/**/*.js', resetPages, pages);
-	gulp.watch(PATHS.src.css + '/**/*.scss', sass);
-	gulp.watch(PATHS.src.img + '/**/*', images);
-	gulp.watch(PATHS.src.sprite + '/*.svg', sprite);
-	gulp.watch(PATHS.src.iconfont + '/*.svg', iconfont);
+    gulp.watch(PATHS.assets, copy);
+    gulp.watch(PATHS.src.src + '/pages/**/*.html', pages);
+    gulp.watch(PATHS.src.src + '/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages));
+    gulp.watch(PATHS.src.src + '/data/**/*.{js,json,yml}', resetPages, pages);
+    gulp.watch(PATHS.src.src + '/helpers/**/*.js').on('all', gulp.series(resetPages, pages));
+    gulp.watch(PATHS.src.css + '/**/*.scss', sass);
+    gulp.watch(PATHS.src.img + '/**/*', images);
+    gulp.watch(PATHS.src.sprite + '/*.svg', sprite);
 }
 
 // Build an svg sprite
