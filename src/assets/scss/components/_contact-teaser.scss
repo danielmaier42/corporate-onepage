@@ -1,6 +1,9 @@
 $contact-teaser-gutter: 15px !default;
 
 .contact-teaser {
+  padding-left: $contact-teaser-gutter;
+  padding-right: $contact-teaser-gutter;
+
   &__image {
     text-align: center;
     margin-bottom: $contact-teaser-gutter * 2;
