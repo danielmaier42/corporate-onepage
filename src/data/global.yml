@@ -2,5 +2,19 @@ page:
   title: Daniel Maier &middot; Softwareentwicklung &amp; Consulting
 
 contact:
-  email: dm@maierdaniel.de
+  email: office@maierdaniel.de
   name: Daniel Maier
+  function: Softwareentwicklung &amp; Consulting
+  links:
+    -
+      title: E-Mail
+      url: mailto:office@maierdaniel.de
+      class: email
+    -
+      title: twitter
+      url: https://twitter.com/danielmaier42
+      class: twitter
+    -
+      title: XING
+      url: https://www.xing.com/profile/Daniel_Maier89
+      class: xing
