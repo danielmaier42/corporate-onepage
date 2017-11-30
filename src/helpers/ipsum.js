@@ -1,7 +1,7 @@
 
-module.exports = function () {
+module.exports = function (context) {
 
-    let randomNumber = Math.round(Math.random() * 10);
+    let rows = context.hash.rows === undefined ? 1 : context.hash.rows;
 
     let ipsumTexts = [
         'Duis fermentum at justo eget dignissim. Aliquam ornare dolor suscipit euismod imperdiet. Donec sed cursus dui. Aliquam porta dolor vitae felis consectetur, nec iaculis velit imperdiet. Fusce ullamcorper ligula sed rutrum efficitur. Fusce bibendum, lorem a placerat condimentum, augue nunc efficitur libero, et iaculis justo massa sit amet odio. Nam non auctor tellus, hendrerit dignissim metus. Quisque ac ultrices ex, et fringilla lacus. Phasellus ut sodales tellus, quis tristique nisl. Duis eget sem id nibh dignissim imperdiet. Sed feugiat elit eget massa vestibulum hendrerit. Mauris nec velit vel erat interdum semper ac id arcu.',
@@ -16,5 +16,18 @@ module.exports = function () {
         'Sed augue nunc, mattis sed sapien vel, accumsan blandit turpis. Morbi vehicula vulputate tellus, non euismod tortor congue eu. Proin pulvinar pharetra laoreet. Ut non porta sem, at interdum erat. Duis euismod neque id suscipit eleifend. Nulla posuere hendrerit magna, et mattis eros. Duis nec mauris sit amet ex bibendum pulvinar non ac massa.'
     ];
 
-    return ipsumTexts[randomNumber];
+    let output = '';
+
+    for (let i = 0; i < rows; i++) {
+
+        let indexToUse = i;
+
+        while (indexToUse > ipsumTexts.length - 1) {
+            indexToUse -= ipsumTexts.length - 1;
+        }
+
+        output += ipsumTexts[indexToUse] + ' ';
+    }
+
+    return output;
 };
