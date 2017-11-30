@@ -1,10 +1,10 @@
 const Handlebars = require('handlebars');
 
-module.exports = function (symbol, cssClass) {
+module.exports = function (symbol) {
 
 	let html = `
 		<svg class="sprite sprite--${symbol}">
-			<use xlink:href='/assets/sprite/sprite.svg#${symbol}'></use>
+			<use xlink:href='assets/sprite/sprite.svg#${symbol}'></use>
 		</svg>
 	`;
 
