@@ -69,18 +69,36 @@ $contact-teaser-email-color: #F43638 !default;
     &--email {
       a {
         background-color: $contact-teaser-email-color;
+
+        &:hover,
+        &:active,
+        &:focus  {
+          background-color: darken($contact-teaser-email-color, 15%);
+        }
       }
     }
 
     &--xing {
       a {
         background-color: $contact-teaser-xing-color;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: darken($contact-teaser-xing-color, 15%);
+        }
       }
     }
 
     &--twitter {
       a {
         background-color: $contact-teaser-twitter-color;
+
+        &:hover,
+        &:active,
+        &:focus  {
+          background-color: darken($contact-teaser-twitter-color, 15%);
+        }
       }
     }
   }
