@@ -1,7 +1,7 @@
 {
-  "name": "@bergwerk/foundation-template",
+  "name": "@maierdaniel/corporate-onepage",
   "version": "1.0.0",
-  "description": "Template for Frontend Dev",
+  "description": "Corporate Onepage @ maierdaniel.de",
   "scripts": {
     "start": "npm run dev",
     "dev": "gulp",
@@ -44,7 +44,7 @@
     "gulp-uncss": "^1.0.1",
     "gulp-util": "^3.0.8",
     "js-yaml": "^3.4.6",
-    "panini": "^1.3.0",
+    "panini": "^1.6.0",
     "path": "^0.12.7",
     "rimraf": "^2.4.3",
     "uglifyjs-webpack-plugin": "^0.4.6",
