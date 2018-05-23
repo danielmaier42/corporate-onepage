@@ -1,10 +1,16 @@
 page:
   title: Daniel Maier &middot; Softwareentwicklung &amp; Consulting
 
+tracking:
+  gaId: UA-109839397-1
+
 contact:
   email: office@maierdaniel.de
   name: Daniel Maier
   function: Softwareentwicklung &amp; Consulting
+  street: Tilsiter Str. 1
+  zip: 95339
+  city: Neuenmarkt
   phone: 01577 / 58 00 267
   phone_technical: +4915775800267
   tax_number: 229/247/30025
