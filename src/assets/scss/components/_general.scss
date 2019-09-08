@@ -10,3 +10,17 @@ h5, .h5,
 h6, .h6 {
     text-transform: uppercase;
 }
+
+.reveal {
+    a {
+        padding: 0 .2rem;
+        text-decoration: underline;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
