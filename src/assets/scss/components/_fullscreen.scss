@@ -52,6 +52,10 @@
 
         .menu {
             flex-direction: column;
+
+            a {
+                padding: .5em 1em;
+            }
         }
     }
 
@@ -123,6 +127,10 @@
 
             .menu {
                 flex-direction: row;
+
+                a {
+                    padding: .7em 1em;
+                }
             }
         }
     }
