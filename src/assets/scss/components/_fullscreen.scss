@@ -49,6 +49,10 @@
         position: absolute;
         bottom: 1rem;
         font-size: .8em;
+
+        .menu {
+            flex-direction: column;
+        }
     }
 
     &__contact {
@@ -116,6 +120,10 @@
         &__menu {
             left: 50%;
             transform: translateX(-50%);
+
+            .menu {
+                flex-direction: row;
+            }
         }
     }
 }
