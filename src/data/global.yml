@@ -30,19 +30,16 @@ contact:
       class: xing
 
 skills:
-  - title: PHP
-  - title: MySQL
-
+  - title: E-Commerce
   - title: Coding-Standards
+  - title: IT-Security
 
   - title: Magento 1 & 2
   - title: TYPO3
   - title: Laravel
 
-  - title: Linux
+  - title: PHP
+  - title: MySQL
+
   - title: AmazonAWS
   - title: Docker
-  - title: IT-Security
-
-  - title: JIRA
-  - title: Confluence
