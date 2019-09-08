@@ -1,39 +1,59 @@
-<section class="section section--contact">
-    <div class="grid-container">
-        {{> contact-teaser}}
-    </div>
-</section>
+<div class="fullscreen">
+  <div class="fullscreen__corner fullscreen__corner--top"></div>
 
-<section class="section section--about section--gray">
-    <div class="grid-container">
-        <h2>Entwickler aus Leidenschaft</h2>
+  <div class="fullscreen__logo">
+    <img src="{{root}}assets/img/logo.png" alt="{{safeString global.page.title}}">
+  </div>
 
-        <p>Nachdem ich bereits mit 12 Jahren erstmals mit HTML & Co. in Berührung kam stand für mich fest, dass ich
-            mich in diesem Bereich weiterentwickeln möchte. Im Laufe der Zeit hat sich dies manifestiert und ich
-            begann mich auf die Backend-Entwicklung mit PHP zu spezialisieren.</p>
+  <div class="fullscreen__menu">
+    <ul class="menu">
+      <li>
+        <a href="#" data-open="revealAbout">About</a>
+      </li>
+      <li>
+        <a href="#" data-open="revealImprint">Imprint</a>
+      </li>
+      <li>
+        <a href="#" data-open="revealPrivacy">Privacy</a>
+      </li>
+    </ul>
+  </div>
 
-        <p>Mehr als 10 Jahre später habe ich einiges an Erfahrung in den unterschiedlichsten Bereichen sammeln können.
-            Diese umfassen zum Beispiel komplexe Schnittstellen-Thematiken, bei welchen diverse
-            Abteilungen und deren Prozesse berücksichtigt und gegebenenfalls optimiert wurden. Selbst komplexe
-            IT-Systeme sind somit kein Neuland für mich - meine Expertise hiermit konnte ich bereits bei namhaften
-            Firmen sowie Kunden unter Beweis stellen.</p>
+  <div class="fullscreen__contact">
+    <ul>
+      {{#each global.contact.links}}
+      <li class="fullscreen__contact--{{class}}">
+        <a href="{{url}}" title="{{title}}" alt="{{title}}" target="_blank">
+          {{sprite class}}
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
 
-        <p>Wenn Sie ein komplexes Projekt haben, bei welchem Sie zusätzliche Ressourcen benötigen, oder Beratung /
-            Coaching Ihrer Entwickler wünschen, erreichen Sie mich gerne per Mail unter
-            <a href="mailto:{{global.contact.email}}">{{global.contact.email}}</a>.
-            Ich werde mich schnellstmöglich mit Ihnen in Verbindung setzen um alle weiteren Details persönlich zu
-            besprechen.</p>
+  <div class="fullscreen__corner fullscreen__corner--bottom"></div>
+</div>
 
-        <div class="skills">
-            <ul>
-                {{#each global.skills}}
-                    <li>
-                        <span class="primary label">{{title}}</span>
-                    </li>
-                {{/each}}
-            </ul>
-        </div>
-    </div>
-</section>
+<div class="reveal large" id="revealAbout" data-reveal>
+  {{> content-about}}
 
-{{> footer}}
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal large" id="revealImprint" data-reveal>
+  {{> content-imprint}}
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal large" id="revealPrivacy" data-reveal>
+  {{> content-privacy}}
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

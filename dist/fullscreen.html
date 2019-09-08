@@ -4,25 +4,25 @@
   <meta charset="utf-8"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{safeString global.page.title}}</title>
-  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <title>Daniel Maier &middot; Softwareentwicklung &amp; Consulting</title>
+  <link rel="stylesheet" href="assets/css/app.css">
 
-  <link rel="shortcut icon" href="{{root}}assets/img/favicon.png">
-  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon.png" sizes="256x256">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{root}}assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="256x256">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png">
   <meta name="msapplication-TileColor" content="#f2f2f2">
-  <meta name="msapplication-TileImage" content="{{root}}assets/img/favicon.png">
+  <meta name="msapplication-TileImage" content="assets/img/favicon.png">
 </head>
 <body>
 
-{{> body}}
 
-<script src="{{root}}assets/js/vendor.js"></script>
-<script src="{{root}}assets/js/app.js"></script>
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/app.js"></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
-    var gaProperty = '{{global.tracking.gaId}}';
+    var gaProperty = 'UA-109839397-1';
     var disableStr = 'ga-disable-' + gaProperty;
     if (document.cookie.indexOf(disableStr + '=true') > -1) {
         window[disableStr] = true;
@@ -39,7 +39,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{global.tracking.gaId}}', {'anonymize_ip':true});
+    gtag('config', 'UA-109839397-1', {'anonymize_ip':true});
 </script>
 <!-- END: Google Analytics -->
 

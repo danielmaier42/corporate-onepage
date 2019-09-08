@@ -1,0 +1,117 @@
+.fullscreen {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: $global-padding * 2;
+    }
+
+    &__corner {
+        &:before,
+        &:after {
+            content: ' ';
+            position: absolute;
+            background: $primary-color;
+        }
+
+        &:before {
+            width: $fullscreen-corner-width;
+            height: $fullscreen-corner-length;
+        }
+
+        &:after {
+            width: $fullscreen-corner-length;
+            height: $fullscreen-corner-width;
+        }
+
+        &--top {
+            &:before,
+            &:after {
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+
+        &--bottom {
+            &:before,
+            &:after {
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        bottom: 1rem;
+        font-size: .8em;
+    }
+
+    &__contact {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        a {
+            background: none;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+            fill: $secondary-color;
+        }
+
+        &--email {
+            &:hover {
+                svg {
+                    fill: $fullscreen-email-color;
+                }
+            }
+        }
+
+        &--twitter {
+            &:hover {
+                svg {
+                    fill: $fullscreen-twitter-color;
+                }
+            }
+        }
+
+        &--xing {
+            &:hover {
+                svg {
+                    fill: $fullscreen-xing-color;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(medium up) {
+    .fullscreen {
+        &__logo {
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 0;
+        }
+        &__menu {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__contact {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
