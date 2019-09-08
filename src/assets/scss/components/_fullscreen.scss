@@ -88,6 +88,14 @@
             }
         }
 
+        &--linkedin {
+            &:hover {
+                svg {
+                    fill: $fullscreen-linkedin-color;
+                }
+            }
+        }
+
         &--xing {
             &:hover {
                 svg {
@@ -108,10 +116,6 @@
         &__menu {
             left: 50%;
             transform: translateX(-50%);
-        }
-        &__contact {
-            top: 50%;
-            transform: translateY(-50%);
         }
     }
 }
