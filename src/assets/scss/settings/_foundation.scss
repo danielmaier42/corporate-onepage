@@ -68,13 +68,13 @@
 $global-font-size: 150%;
 //$global-width: rem-calc(1200);
 //$global-lineheight: 1.5;
-//$foundation-palette: (
-//        primary: #1779ba,
-//        secondary: #767676,
-//        success: #3adb76,
-//        warning: #ffae00,
-//        alert: #cc4b37,
-//);
+$foundation-palette: (
+        primary: $primary-color,
+        secondary: $secondary-color,
+        success: #3adb76,
+        warning: #ffae00,
+        alert: #cc4b37,
+);
 //$light-gray: #e6e6e6;
 //$medium-gray: #cacaca;
 //$dark-gray: #8a8a8a;
@@ -167,8 +167,8 @@ $header-font-family: $dm-font-headline, $body-font-family;
 //$code-background: $light-gray;
 //$code-border: 1px solid $medium-gray;
 //$code-padding: rem-calc(2 5 1);
-//$anchor-color: $primary-color;
-//$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $primary-color;
+$anchor-color-hover: scale-color($anchor-color, $lightness: 25%);
 //$anchor-text-decoration: none;
 //$anchor-text-decoration-hover: none;
 //$hr-width: $global-width;
