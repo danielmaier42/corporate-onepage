@@ -2,13 +2,14 @@
  * Define Custom Variables
  */
 
-$fullscreen-email-color: #F43638;
-$fullscreen-twitter-color: #1da1f2;
-$fullscreen-linkedin-color: rgb(45,118,176);
-$fullscreen-xing-color: #009090;
-
 $black:                     #000;
 $white:                     #fff;
+$green:                     #28a745;
+
+$contact-email-color:       $green;
+$contact-twitter-color:     #1da1f2;
+$contact-linkedin-color:    rgb(45,118,176);
+$contact-xing-color:        #009090;
 
 /*
  * Overwrite Bootstrap Variables
