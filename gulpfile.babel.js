@@ -104,10 +104,22 @@ function sass() {
 }
 
 let webpackConfig = {
+	mode: 'production',
 	entry: {
 		app: [
 			'./' + PATHS.src.js + '/app.js'
 		]
+	},
+	optimization: {
+		splitChunks: {
+			cacheGroups: {
+				vendor: {
+					chunks: "initial",
+					name: "vendor",
+					enforce: true
+				}
+			}
+		}
 	},
 	output: {
 		filename: '[name].js',
@@ -133,13 +145,12 @@ let webpackConfig = {
 				NODE_ENV: JSON.stringify(ENV)
 			}
 		}),
-
-		new webpack.optimize.CommonsChunkPlugin({
-			name: 'vendor',
-			minChunks: function (module) {
-				// assume that the vendor imports exist in the node_modules directory
-				return module.context && module.context.indexOf('node_modules') !== -1;
-			}
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
+			'window.jQuery': 'jquery',
+			Popper: ['popper.js', 'default'],
+			bootstrap: 'bootstrap'
 		})
 	]
 };
@@ -210,9 +221,6 @@ function javascript() {
 // In production, the images are compressed
 function images() {
 	return gulp.src(PATHS.src.img + '/**/*')
-		.pipe($.if(PRODUCTION, $.imagemin({
-			progressive: true
-		})))
 		.pipe(gulp.dest(PATHS.dist.img));
 }
 

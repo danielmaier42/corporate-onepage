@@ -4,6 +4,13 @@ page:
 tracking:
   gaId: UA-147475431-1
 
+image:
+  favicon: /assets/img/Signet_DanielMaier_RGB_white.png
+  logo: /assets/img/Logo_DanielMaier_RGB_black.png
+  logoInvert: /assets/img/Logo_DanielMaier_RGB_white.png
+  signet: /assets/img/Signet_DanielMaier_RGB_black.png
+  signetInvert: /assets/img/Signet_DanielMaier_RGB_white.png
+
 contact:
   email: office@maierdaniel.de
   name: Daniel Maier
@@ -21,29 +28,20 @@ contact:
       url: mailto:office@maierdaniel.de
       class: email
     -
-      title: twitter
-      url: https://twitter.com/danielmaier42
-      class: twitter
+      title: XING
+      url: https://www.xing.com/profile/Daniel_Maier89
+      class: xing
     -
       title: LinkedIn
       url: https://www.linkedin.com/in/daniel-maier-bb8035183
       class: linkedin
     -
-      title: XING
-      url: https://www.xing.com/profile/Daniel_Maier89
-      class: xing
+      title: twitter
+      url: https://twitter.com/danielmaier42
+      class: twitter
 
 skills:
-  - title: E-Commerce
-  - title: Coding-Standards
-  - title: IT-Security
-
-  - title: Magento 1 & 2
-  - title: TYPO3
-  - title: Laravel
-
-  - title: PHP
-  - title: MySQL
-
-  - title: AmazonAWS
-  - title: Docker
+  - title: Digitalization
+  - title: ProcessManagement
+  - title: eCommerce
+  - title: WebDeveloper

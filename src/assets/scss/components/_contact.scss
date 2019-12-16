@@ -1,0 +1,80 @@
+.contact-wrapper {
+    margin-top: 2em;
+
+    .contact {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 2em;
+
+        a {
+            display: inline-block;
+        }
+
+        .contact-logo {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 1em;
+
+            > svg {
+                width: 100%;
+                height: 50px;
+            }
+        }
+
+        .contact-title {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-family: $headings-font-family;
+            font-weight: bold;
+        }
+
+        &--email {
+            a {
+                &:hover {
+                    .contact-logo {
+                        > svg {
+                            fill: $contact-email-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--twitter {
+            a {
+                &:hover {
+                    .contact-logo {
+                        > svg {
+                            fill: $contact-twitter-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--linkedin {
+            a {
+                &:hover {
+                    .contact-logo {
+                        > svg {
+                            fill: $contact-linkedin-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--xing {
+            a {
+                &:hover {
+                    .contact-logo {
+                        > svg {
+                            fill: $contact-xing-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

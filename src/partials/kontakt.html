@@ -1,0 +1,18 @@
+<div class="contact-wrapper">
+  <div class="row">
+    {{#each global.contact.links}}
+      <div class="col-6 col-md-3">
+        <div class="contact contact--{{class}}">
+          <a href="{{url}}" title="{{title}}" alt="{{title}}" target="_blank">
+            <span class="contact-logo">
+              {{sprite class}}
+            </span>
+            <span class="contact-title">
+              {{title}}
+            </span>
+          </a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

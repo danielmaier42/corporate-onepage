@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html class="no-js" lang="de">
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{safeString global.page.title}}</title>
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
 
-  <link rel="shortcut icon" href="{{root}}assets/img/favicon.png">
-  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon.png" sizes="256x256">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{root}}assets/img/favicon.png">
-  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <link rel="shortcut icon" href="{{global.image.favicon}}">
+  <link rel="icon" type="image/png" href="{{global.image.favicon}}" sizes="256x256">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{global.image.favicon}}">
+
+  <meta name="theme-color" content="#563d7c">
+  <meta name="msapplication-TileColor" content="#563d7c">
   <meta name="msapplication-TileImage" content="{{root}}assets/img/favicon.png">
 </head>
-<body>
+<body class="text-center">
 
 {{> body}}
 
@@ -51,18 +53,20 @@
         window.cookieconsent.initialise({
             "palette": {
                 "popup": {
-                    "background": "#000000"
+                    "background": "#fff",
+                    "text": "#000",
                 },
                 "button": {
-                    "background": "#1779ba"
+                    "background": "#000",
+                    "text": "#fff"
                 }
             },
-            "position": "bottom-right",
+            "position": "bottom",
             "content": {
-                "message": "Auch wir verwenden Cookies - das ist nichts Schlimmes. Sie erleichtern die Benutzung der Seite.",
+                "message": "Auch wir verwenden Cookies, um Ihnen die Benutzung unserer Seite zu erleichtern.",
                 "dismiss": "Verstanden",
-                "link": "Mehr erfahren",
-                "href": "https://www.maierdaniel.de/datenschutz.html"
+                "link": "",
+                "href": ""
             }
         })});
 </script>

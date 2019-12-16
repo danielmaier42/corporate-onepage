@@ -1,4 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Abel|Chau+Philomene+One&display=swap');
+/*
+ * M+ 1M (Headline Font)
+ */
 
-$dm-font-headline: 'Chau Philomene One' !default;
-$dm-font-text: 'Abel' !default;;
+@font-face {
+    font-family: 'mplus-1m';
+    src: url('/assets/fonts/mplus-1m-bold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/mplus-1m-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mplus-1m';
+    src: url('/assets/fonts/mplus-1m-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/mplus-1m-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Oswald (Default Font)
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
