@@ -7,6 +7,11 @@
 
 .masthead-brand {
     margin-bottom: 0;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .nav-masthead .nav-link {
@@ -34,8 +39,15 @@
 @media (min-width: 48em) {
     .masthead-brand {
         float: left;
+
+        img {
+            height: 50px;
+            width: auto;
+        }
     }
+
     .nav-masthead {
         float: right;
+        margin-top: 10px;
     }
 }

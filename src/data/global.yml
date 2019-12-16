@@ -4,6 +4,12 @@ page:
 tracking:
   gaId: UA-147475431-1
 
+image:
+  logo: /assets/img/Logo_DanielMaier_RGB_black.png
+  logoInvert: /assets/img/Logo_DanielMaier_RGB_white.png
+  signet: /assets/img/Signet_DanielMaier_RGB_black.png
+  signetInvert: /assets/img/Signet_DanielMaier_RGB_white.png
+
 contact:
   email: office@maierdaniel.de
   name: Daniel Maier
