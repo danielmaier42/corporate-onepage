@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $btn-font-weight;
 }
 
-.lead {
-    margin-bottom: 1.5em;
+p {
+    font-weight: lighter;
+
+    &.lead {
+        margin-bottom: 1.5em;
+        font-weight: lighter;
+    }
 }
