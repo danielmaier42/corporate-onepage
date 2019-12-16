@@ -7,16 +7,17 @@ $fullscreen-twitter-color: #1da1f2;
 $fullscreen-linkedin-color: rgb(45,118,176);
 $fullscreen-xing-color: #009090;
 
-$skills-gutter: 5px;
+$black:                     #000;
+$white:                     #fff;
 
 /*
  * Overwrite Bootstrap Variables
  */
 
-$primary:                   #fff;
+$primary:                   $white;
 
 $body-color:                $primary;
-$body-bg:                   #000;
+$body-bg:                   $black;
 
 $border-radius:             0;
 $border-radius-lg:          0;
@@ -31,3 +32,5 @@ $headings-font-weight:      bold;
 
 $btn-font-family:           $font-family-monospace;
 $btn-font-weight:           bold;
+
+$modal-content-color:       $black;

@@ -20,6 +20,10 @@ App.prototype.initializeEventListeners = function () {
 	$('.modal').on('hidden.bs.modal', function () {
 		self.onModalWasHidden($(this));
 	});
+
+	$('a').click(function () {
+		self.onAnchorClicked($(this));
+	});
 };
 
 App.prototype.loadInitialPage = function () {
@@ -47,6 +51,14 @@ App.prototype.onFootLinkClicked = function ($footLink) {
 
 App.prototype.onModalWasHidden = function ($modal) {
 	$('a.active').removeClass('active');
+};
+
+App.prototype.onAnchorClicked = function ($anchor) {
+	let href = $anchor.attr('href');
+
+	if (href.charAt(0) === '#') {
+		window.location.hash = href;
+	}
 };
 
 $(document).ready(function () {
