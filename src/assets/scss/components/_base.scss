@@ -10,8 +10,15 @@ body {
 body {
     display: -ms-flexbox;
     display: flex;
+    letter-spacing: .05rem;
 }
 
-.cover-container {
-    max-width: 42em;
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: $btn-font-weight;
 }
