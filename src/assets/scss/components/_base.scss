@@ -16,9 +16,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: .1rem;
     text-transform: uppercase;
+    margin-bottom: .5em;
 }
 
 .btn {
     text-transform: uppercase;
     font-weight: $btn-font-weight;
+}
+
+.lead {
+    margin-bottom: 1.5em;
 }

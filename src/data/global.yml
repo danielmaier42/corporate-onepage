@@ -41,16 +41,7 @@ contact:
       class: xing
 
 skills:
-  - title: E-Commerce
-  - title: Coding-Standards
-  - title: IT-Security
-
-  - title: Magento 1 & 2
-  - title: TYPO3
-  - title: Laravel
-
-  - title: PHP
-  - title: MySQL
-
-  - title: AmazonAWS
-  - title: Docker
+  - title: eCommerce
+  - title: WebDeveloper
+  - title: ITSecurity
+  - title: ProcessManagement
