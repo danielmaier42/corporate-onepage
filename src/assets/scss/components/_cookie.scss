@@ -1,7 +1,14 @@
 .cc-window {
     background-color: rgba(255, 255, 255, .5) !important;
     font-family: $font-family-sans-serif !important;
-    height: 60px !important;
+    position: absolute !important;
+    height: 6rem !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 10000 !important;
+    max-width: initial !important;
+    padding: 1rem !important;
 
     .cc-link {
         display: none !important;
@@ -9,14 +16,19 @@
 
     .cc-message {
         font-size: .9em !important;
-        position: absolute !important;
-        left: 0 !important;
-        right: 0 !important;
+        position: absolute;
+        left: 1rem;
+        top: .5rem;
+        bottom: .5rem;
+        text-align: left;
+        max-width: 60%;
+        margin: 0 !important;
     }
 
     .cc-compliance {
-        position: absolute !important;
-        right: 30px !important;
+        position: absolute;
+        right: 1rem;
+        top: .8rem;
 
         a {
             text-transform: uppercase !important;
@@ -29,12 +41,41 @@
     }
 
     + div {
-        padding-bottom: 60px !important;
+        padding-bottom: 6rem !important;
     }
 
     &.cc-invisible {
         + div {
             padding-bottom: 0 !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .cc-window {
+        height: 4rem !important;
+
+        + div {
+            padding-bottom: 4rem !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .cc-window {
+        .cc-message {
+            top: 1rem;
+            max-width: 70%;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .cc-window {
+        .cc-message {
+            text-align: center;
+            max-width: none;
+            width: 100%;
         }
     }
 }
