@@ -51,6 +51,7 @@ App.prototype.onFootLinkClicked = function ($footLink) {
 
 App.prototype.onModalWasHidden = function ($modal) {
 	$('a.active').removeClass('active');
+	window.location.hash = 'home';
 };
 
 App.prototype.onAnchorClicked = function ($anchor) {

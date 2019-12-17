@@ -61,12 +61,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.bergwerk.ag/bergwerk/foundation-template.git"
+    "url": "https://github.com/danielmaier42/corporate-onepage"
   },
   "babel": {
     "presets": [
       "es2015"
     ]
   },
-  "private": true
+  "private": false
 }
