@@ -5,7 +5,7 @@ tracking:
   gaId: UA-147475431-1
 
 image:
-  favicon: /assets/img/Signet_DanielMaier_RGB_white.png
+  favicon: /assets/img/Signet_DanielMaier_RGB_black.png
   logo: /assets/img/Logo_DanielMaier_RGB_black.png
   logoInvert: /assets/img/Logo_DanielMaier_RGB_white.png
   signet: /assets/img/Signet_DanielMaier_RGB_black.png
